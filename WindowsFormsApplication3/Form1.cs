@@ -14,9 +14,9 @@ using System.Media;
 // Sept 2016
 namespace WindowsFormsApplication3
 {
-    public partial class Form1 : Form
+    public partial class Greeting_Card : Form
     {
-        public Form1()
+        public Greeting_Card()
         {
             //Graphics fg = this.CreateGraphics();
             //Font drawFont = new Font("Ariel", 50, FontStyle.Bold);

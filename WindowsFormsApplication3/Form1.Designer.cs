@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApplication3
 {
-    partial class Form1
+    partial class Greeting_Card
     {
         /// <summary>
         /// Required designer variable.
@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Greeting_Card));
             this.titleLabel = new System.Windows.Forms.Label();
             this.subText = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -52,14 +53,15 @@
             this.subText.TabIndex = 1;
             this.subText.Text = "Click for YOUR constellation!";
             // 
-            // Form1
+            // Greeting_Card
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(467, 295);
             this.Controls.Add(this.subText);
             this.Controls.Add(this.titleLabel);
-            this.Name = "Form1";
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "Greeting_Card";
             this.Text = "Form1";
             this.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseClick);
             this.ResumeLayout(false);
