@@ -68,5 +68,14 @@ namespace WindowsFormsApplication3.Properties {
                 return ResourceManager.GetStream("starSound", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream strumSound {
+            get {
+                return ResourceManager.GetStream("strumSound", resourceCulture);
+            }
+        }
     }
 }

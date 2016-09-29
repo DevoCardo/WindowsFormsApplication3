@@ -10,9 +10,8 @@ using System.Windows.Forms;
 using System.Threading;
 using System.Media;
 
-// add header comments here
+// Devon Cardiff
 // Sept 2016
-
 namespace WindowsFormsApplication3
 {
     public partial class Form1 : Form
@@ -158,16 +157,22 @@ namespace WindowsFormsApplication3
             Thread.Sleep(500);
             //Creates Music / Band test and lightning bolt
             Graphics fg = this.CreateGraphics();
-            Font drawFont = new Font("Ariel", 50, FontStyle.Bold);
+            Font bandFont = new Font("Ariel", 50, FontStyle.Bold);
             SolidBrush bandBrush = new SolidBrush(Color.White);
-            fg.DrawString("Music", drawFont, bandBrush, 0, 40);
+            fg.DrawString("Music", bandFont, bandBrush, 0, 40);
             Thread.Sleep(500);
-            fg.DrawString("Band", drawFont, bandBrush, 250, 40);
+            fg.DrawString("Band", bandFont, bandBrush, 250, 40);
             Thread.Sleep(200);
             formGraphics.DrawLine(whitePen, 220, 50, 210, 75 );
             formGraphics.DrawLine(whitePen, 240, 75, 207, 75);
             formGraphics.DrawLine(whitePen, 240, 75, 210, 110);
-
+            Thread.Sleep(100);
+            SoundPlayer strumPlayer = new SoundPlayer(Properties.Resources.strumSound);
+            strumPlayer.Play();
+            Thread.Sleep(2500);
+            Font sponsorFont = new Font("Ariel", 15, FontStyle.Bold);
+            SolidBrush sponsorBrush = new SolidBrush(Color.White);
+            fg.DrawString("Our Sponsor!", sponsorFont, sponsorBrush, 100, 250);
 
         }
 
